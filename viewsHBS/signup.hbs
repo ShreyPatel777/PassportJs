@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <title>sign-up</title>
+    <style>
+        body {
+            /* background-color: rgb(140, 217, 250); */
+            background: url('white leaves.jpg') no-repeat center center/cover;
+            height: 100vh;
+        }
+
+        fieldset {
+            height: 380px;
+            width: 300px;
+            position: absolute;
+            top: 180px;
+            left: 580px;
+            align-items: center;
+            background-color: white;
+            border-radius: 25px;
+            border: 3px solid white;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 30px;
+            /* background-color: white; */
+            /* border-top-right-radius: 23px;
+            border-top-left-radius: 23px; */
+        }
+
+        #title {
+            font-size: 25px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: bold;
+            text-indent: 8px;
+            text-decoration: underline;
+        }
+
+        input {
+            background-color: white;
+            padding: 10px 10px;
+            margin: 1px 5px;
+            font-size: 13px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: bolder;
+            border-radius: 8px;
+        }
+
+        #name {
+            margin-top: 0px;
+        }
+
+        button {
+            position: relative;
+            top: 15px;
+            left: 100px;
+            padding: 5px 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 500;
+            border-radius: 8px;
+            background-color: rgb(31, 31, 238);
+            color: white;
+        }
+
+        #btn {
+            position: relative;
+            top: 15px;
+            left: 90px;
+            padding: 5px 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 500;
+            border-radius: 8px;
+            background-color: beige;
+            color: white;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        button:active {
+            background-color: rgb(175, 231, 65);
+            color: black;
+        }
+
+        .para {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 17px;
+            padding: 6px 0px;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+            {
+                {
+                !-- p:hover {
+                    color: red;
+                    background-color: red;
+                }
+
+                --
+            }
+        }
+
+        p:active {
+            color: black;
+        }
+
+        img {
+            height: 1rem;
+            margin-left: 6px;
+            position: relative;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/signup" method="post">
+        <fieldset>
+            <p id="title">Signup</p>
+            <input id="name" type="text" placeholder="Name" size="40" required name="username" autofocus>
+            <br>
+            <br>
+            <input type="email" placeholder="xyz123@gmail.com" size="40" required name="email" id="email">
+            <br>
+            <br>
+            <input type="password" placeholder="••••••••" size="40" required name="password">
+            <br>
+            <button onclick="submitForm()">Signup</button>
+            <br>
+            <br>
+            <hr>
+            <button id="btn"><a href="login">Loginpage</a></button>
+        </fieldset>
+    </form>
+    <script>
+        function submitForm() {
+            document.contact - form.submit();
+            document.contact - form.reset();
+        }
+    </script>
+</body>
+
+</html>
